@@ -1,0 +1,316 @@
+body {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+.menu {
+    background-color: var(--color-aside);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px;
+    position: relative;
+}
+
+.burger-body {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    /* padding: 10px; */
+    z-index: 11;
+    /* position: absolute;
+    top: 10px;
+    right: 10px; */
+    perspective: 500px;
+    width: 30px;
+    height: 17px;
+    transition: transform 0.3s ease;
+}
+
+.burger-body .first, .middle, .second {
+    transition: transform 0.3s ease;
+}
+
+.burger-body span {
+    display: none;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    padding: 20px;
+}
+
+.menu .Logotype {
+    color: var(--color-text);
+    font-size: 22px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.menu .Logotype:hover {
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.menu .accent {
+    color: var(--color-text-accent);
+}
+
+.navigation {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.navigation a {
+    color: var(--color-text);
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.2s ease;
+}
+
+.navigation a:hover {
+    color: silver;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.navigation a img {
+    min-width: 50px;
+    min-height: auto;
+    transition: all 0.2s ease;
+}
+
+.navigation a img:hover {
+    transform: scale(1.1);
+}
+
+.navigation .active {
+    color: var(--color-text-accent);
+}
+
+.navigation a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+}
+
+tbody tr:hover {
+    background-color: #e8eef3;
+}
+
+@media (max-width: 1450px){
+    .menu .Logotype {
+        font-size: 20px;
+    }
+
+    .menu .Logotype:hover {
+        font-size: 21px;
+    }
+
+    .navigation a {
+        font-size: 16px;
+    }
+    
+    .navigation a:hover {
+        font-size: 17px;
+    }
+
+    .navigation a img {
+        min-width: 40px;
+    }
+    
+    .navigation a img:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 1080px) {
+    body {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+    }
+
+    .menu .Logotype {
+        font-size: 18px;
+    }
+
+    .navigation {
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .menu .Logotype:hover {
+        font-size: 19px;
+    }
+
+    .navigation a {
+        font-size: 14px;
+    }
+    
+    .navigation a:hover {
+        font-size: 15px;
+    }
+
+    .navigation a img {
+        min-width: 36px;
+    }
+    
+    .navigation a img:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 995px) {
+    body {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+
+    .navigation {
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .menu .Logotype {
+        font-size: 18px;
+    }
+
+    .menu .Logotype:hover {
+        font-size: 15px;
+    }
+
+    .navigation a {
+        font-size: 10px;
+    }
+    
+    .navigation a:hover {
+        font-size: 11px;
+    }
+
+    .navigation a img {
+        width: 10px;
+        height: auto;
+    }
+    
+    .navigation a img:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 764px) {
+    .logo-container {
+        justify-content: space-between;
+    }
+
+    .menu {
+        background-color: var(--color-aside);
+        min-height: 40px;
+        /* width: 100%; */
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        /* justify-content: space-between; */
+        /* padding-right: 40px; */
+    }
+
+    .burger-body {
+        display: flex;
+    }
+/* 
+    .burger-body {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+        padding: 0;
+        z-index: 11;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+    } */
+
+    .burger-body span{
+        display: block;
+        width: 30px;
+        height: 2px;
+    }
+
+    .logo-container {
+        display: flex; /* 👈 явно вказуємо показати */
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .navigation.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        background-color: var(--color-aside);
+        padding: 20px 0;
+        gap: 20px;
+        z-index: 10;
+    }
+    
+    body {
+        /* display: flex;
+        flex-direction: column;
+        width: 100%; */
+        grid-template-columns: 1fr;
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* width: 100%; */
+        padding: 20px;
+    }
+
+    .main {
+        /* width: 100%; */
+        padding: 0;
+    }
+
+    .burger-body:hover, .burger-body.active {
+        /* top: 10px; */
+    }
+
+    .burger-body:hover .middle, .burger-body.active .middle {
+        display: none;
+    }
+
+    .burger-body:hover .first, .burger-body.active .first{
+        transform: rotateZ(40deg);
+        position: absolute;
+    }
+
+    .burger-body:hover .second, .burger-body.active .second{
+        transform: rotateZ(-40deg);
+    }
+}

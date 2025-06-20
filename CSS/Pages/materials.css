@@ -1,0 +1,124 @@
+.materials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-main);
+    min-height: 100vh;
+}
+
+.wrapper {
+    padding: 20px;
+}
+
+.materials-namepage {
+    margin: 60px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-text);
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.materials-namepage::after {
+    content: '';
+    position: absolute;
+    left: 44%;
+    bottom: 0;
+    width: 8%;
+    height: 3px;
+    background-color: var(--color-text-accent);
+}
+
+.materials-container {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(100px, 200px));
+    gap: 20px;
+}
+
+.lesson-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    gap: 20px;
+    border: 2px solid var(--color-table-border);
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--color-text);
+    font-size: 16px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.4s forwards;
+}
+
+.lesson-container h2 {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.lesson-container h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40%;
+    height: 2px;
+    background-color: var(--color-text-accent);
+}
+
+
+.lesson-container a {
+    color: var(--color-text);
+}
+
+.lesson-container a:hover {
+    color: var(--color-text-accent);
+    cursor: pointer;
+}
+
+.lesson-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-container:nth-child(even) {
+    animation-delay: 0.1s;
+}
+.lesson-container:nth-child(odd) {
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1200px) {
+    .materials-container {
+        grid-template-columns: repeat(4, minmax(100px, 200px));
+    }
+}
+
+@media (max-width: 1000px) {
+    .materials-container {
+        grid-template-columns: repeat(3, minmax(100px, 200px));
+    }
+}
+
+@media (max-width: 800px) {
+    .materials-container {
+        grid-template-columns: repeat(2, minmax(100px, 200px));
+    }
+}
+
+@media (max-width: 470px) {
+    .materials-container {
+        grid-template-columns: repeat(1, minmax(100px, 200px));
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оцінки</title>
+    <link rel="stylesheet" href="CSS/controll.css">
+    <link rel="stylesheet" href="CSS/Pages/marks.css">
+</head>
+<body>
+    <aside class="menu">
+        <ul class="logo-container">
+            <li><a class="Logotype" href="index.html">Кабінет <span class="accent">студента</span></a></li>
+        </ul>
+        <div class="burger-body">
+            <span class="first"></span>
+            <span class="middle"></span>
+            <span class="second"></span>
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html" class="active"><img src="Images/icon-profil.png" alt="Кабінет">Кабінет</a></li>
+            <li><a href="timetable.html"><img src="Images/icon-timetable.png" alt="Розклад занять">Розклад занять</a></li>
+            <li><a href="news.html"><img src="Images/icon-info.png" alt="Оголошення">Оголошення</a></li>
+            <li><a href="materials.html"><img src="Images/icon-materials.png" alt="Матеріали">Матеріали</a></li>
+            <li><a href="marks.html"><img src="Images/icon-marks.png" alt="Оцінки">Оцінки</a></li>
+        </ul>
+    </aside>
+    <main class="marks">
+        <div class="wrapper">
+            <h1>Журнал оцінок</h1>
+            <div class="marks-container">
+                <table class="marks-table">
+                    <thead>
+                        <tr>
+                            <th id="sort-subject">Предмет <span class="arrow" id="arrow-subject">▼</span></th>
+                            <th id="sort-grade">Оцінка <span class="arrow" id="arrow-grade">▼</span></th>
+                            <th>Тема</th>
+                            <th>Дата</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Англійська</td>
+                            <td>4</td>
+                            <td>Present Simple</td>
+                            <td>03.04.23</td>
+                        </tr>
+                        <tr>
+                            <td>Математика</td>
+                            <td>3</td>
+                            <td>Present Simple</td>
+                            <td>04.04.23</td>
+                        </tr>
+                        <tr>
+                            <td>Історія</td>
+                            <td>5</td>
+                            <td>Present Simple</td>
+                            <td>02.04.23</td>
+                        </tr>
+                        <tr>
+                            <td>Англійська</td>
+                            <td>4</td>
+                            <td>Present Simple</td>
+                            <td>06.04.23</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="JS/sortMarks.js"></script>
+    <script src="JS/burger.js"></script>
+</body>
+</html>

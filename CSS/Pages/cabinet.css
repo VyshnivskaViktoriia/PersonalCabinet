@@ -1,0 +1,49 @@
+.cabinet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 40px;
+    min-height: 100vh;
+    background-color: var(--color-main);
+}
+
+
+.person-img{
+    width: 300px;
+    height: auto;
+    transition: all 0.3s ease;
+    margin-top: 40px;
+}
+
+.person-img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.info p {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.info p span {
+    color: var(--color-main-text);
+    font-size: 16px;
+}
+
+@media (max-width: 764px) {
+
+    .person-img {
+        width: 200px;
+        margin-top: 40px;
+    }
+
+}
