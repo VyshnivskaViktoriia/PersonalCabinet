@@ -7,6 +7,10 @@
     background-color: var(--color-main);
 }
 
+.table-container {
+    min-height: 140vh;
+}
+
 .shedule-update{ 
     margin-top: 40px;
     border: 2px solid var(--color-table-border);
