@@ -1,6 +1,6 @@
 const materialsData = {
     english: [
-        { name: "Лекція 1", file: "./testSecond.pdf", type: "Лекції" },
+        { name: "Лекція 1", file: "./TestSecond.pdf", type: "Лекції" },
         { name: "Лекція 2", file: "./test.txt", type: "Лекції" },
         { name: "Лекція 3", file: "materials/english2.pdf", type: "Лекції" },
         { name: "ДЗ 1", file: "materials/english_hw1.pdf", type: "Домашнє завдання" },
