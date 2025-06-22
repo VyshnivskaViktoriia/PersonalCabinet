@@ -6,6 +6,7 @@
     <title>Матеріали</title>
     <link rel="stylesheet" href="CSS/controll.css">
     <link rel="stylesheet" href="CSS/Pages/materials.css">
+    <link rel="stylesheet" href="CSS/Pages/materialsTwoVers.css">
 </head>
 <body>
     <aside class="menu">
@@ -25,64 +26,18 @@
             <li><a href="marks.html"><img src="Images/icon-marks.png" alt="Оцінки">Оцінки</a></li>
         </ul>
     </aside>
-    <main class="materials">
-        <div class="wrapper">
+    <main>
+        <div class="materials">
             <h1 class="materials-namepage">Матеріали</h1>
-            <div class="materials-container">
-                <div class="lesson-container">
-                    <h2>Англійська</h2>
-                    <a href="test.txt" download>Інформація</a>
-                </div>
-                <div class="lesson-container">
-                    <h2>Англійська</h2>
-                    <a href="test.txt" download>Інформація</a>
-                </div>
-                <div class="lesson-container">
-                    <h2>Англійська</h2>
-                    <a href="test.txt" download>Інформація</a>
-                </div>
-                <div class="lesson-container">
-                    <h2>Англійська</h2>
-                    <a href="test.txt" download>Інформація</a>
-                </div>
-                <div class="lesson-container">
-                    <h2>Англійська</h2>
-                    <a href="test.txt" download>Інформація</a>
-                </div>
-                <div class="lesson-container">
-                    <h2>Англійська</h2>
-                    <a href="test.txt" download>Інформація</a>
-                </div>
-                <div class="lesson-container">
-                    <h2>Англійська</h2>
-                    <a href="test.txt" download>Інформація</a>
-                </div>
-                <div class="lesson-container">
-                    <h2>Англійська</h2>
-                    <a href="test.txt" download>Інформація</a>
-                </div>
-                <div class="lesson-container">
-                    <h2>Англійська</h2>
-                    <a href="test.txt" download>Інформація</a>
-                </div>
-                <div class="lesson-container">
-                    <h2>Англійська</h2>
-                    <a href="test.txt" download>Інформація</a>
-                </div>
-                <div class="lesson-container">
-                    <h2>Англійська</h2>
-                    <a href="test.txt" download>Інформація</a>
-                </div>
-                <div class="lesson-container">
-                    <h2>Англійська</h2>
-                    <a href="test.txt" download>Інформація</a>
-                </div>
-                
+            <div class="subject-selector">
+                <button class="subject-btn" data-subject="english">Англійська</button>
+                <button class="subject-btn" data-subject="math">Математика</button>
+                <button class="subject-btn" data-subject="informatics">Інформатика</button>
             </div>
+            <div id="materials-container"></div>
         </div>
-        
-        
     </main>
     <script src="JS/burger.js"></script>
+    <script src="JS/materialsShow.js"></script>
 </body>
 </html>

@@ -122,3 +122,67 @@
         grid-template-columns: repeat(1, minmax(100px, 200px));
     }
 }
+
+
+
+.subject-selector {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.subject-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--color-btn);
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.subject-btn:hover {
+    background-color: #d9eaf7;
+}
+
+#materials-container ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#materials-container li {
+    margin: 10px 0;
+}
+
+.download-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--color-btn);
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    width: 120px;
+    height: 20px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.download-btn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.materials-section {
+    margin-bottom: 40px;
+}
+
+.materials-section h2 {
+    font-size: 22px;
+    color: var(--color-text-accent);
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
