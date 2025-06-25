@@ -1,6 +1,4 @@
 .news {
-    margin-left: 220px;
-    width: calc(100% - 220px);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -174,10 +172,6 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .news {
-        margin-left: 200px;
-        width: calc(100% - 200px);
-    }
 }
 
 @media (max-width: 600px) {
