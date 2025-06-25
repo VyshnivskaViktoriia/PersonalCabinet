@@ -26,20 +26,16 @@
         </ul>
     </aside>
     <main class="news">
-        <h1>Оголошення</h1>
-        <div class="news-container">
-            <h2>Важливо</h2>
-            <ul class="news-list">
-                <li>Заміна! 1 пара - 25 квітня.</li>
-                <li>Перенесена 2 пара - 26 квітня.</li>
-                <li><a href="timetable.html" class="news-link">переглянути розклад</a></li>
-                <li>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing.
-                </li>
-            </ul>
-            
+        <h1 class="news-namepage">Оголошення</h1>
+        <div class="category-selector">
+            <button class="category-btn active" data-category="all">Всі</button>
+            <button class="category-btn" data-category="important">Важливо</button>
+            <button class="category-btn" data-category="schedule">Розклад</button>
+            <button class="category-btn" data-category="general">Загальні</button>
         </div>
+        <div id="news-container"></div>
     </main>
     <script src="JS/burger.js"></script>
+    <script src="JS/newsSort.js"></script>
 </body>
 </html>

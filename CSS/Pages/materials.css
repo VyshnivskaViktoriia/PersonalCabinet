@@ -31,6 +31,7 @@
 }
 
 .materials-container {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(5, minmax(100px, 200px));
     gap: 20px;
@@ -112,15 +113,6 @@
 
 .subject-btn:hover {
     background-color: #d9eaf7;
-}
-
-#materials-container ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-#materials-container li {
-    margin: 10px 0;
 }
 
 .download-btn {

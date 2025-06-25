@@ -35,7 +35,7 @@ function showMaterials(subject) {
         return;
     }
 
-    // 🔹 Групуємо по типу
+    // Групуємо по типу
     const grouped = {};
     items.forEach(item => {
         if (!grouped[item.type]) {
@@ -44,7 +44,7 @@ function showMaterials(subject) {
         grouped[item.type].push(item);
     });
 
-    // 🔹 Для кожного типу створюємо секцію
+    // Для кожного типу створюємо секцію
     Object.keys(grouped).forEach(type => {
         const section = document.createElement("div");
         section.classList.add("materials-section");
